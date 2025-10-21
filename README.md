@@ -2,7 +2,7 @@
 
 BugTracker is a web-based application designed to help software development teams efficiently report, track, and manage bugs throughout the software lifecycle. It allows users to log new bugs, assign them to team members, update their status, and monitor progress in real time.
 
-📁 Project Structure
+**📁 Project Structure**
 
 BugTracker/
 ├── Backend/
@@ -23,7 +23,7 @@ BugTracker/
 ├── README.md
 └── .gitignore
 
-🏗️ Features
+**🏗️ Features**
 
 User Management: Create, update, and manage user accounts.
 
@@ -37,7 +37,7 @@ Notifications: Email or in-app alerts for bug updates (optional).
 
 Role-Based Access: Admins, developers, and testers with different permissions.
 
-🚀 Quick Start
+**🚀 Quick Start**
 
 Backend (.NET)
 
@@ -65,7 +65,7 @@ ng serve --open
 
 # Frontend will be available at http://localhost:4200
 
-Database (PostgreSQL)
+**Database (PostgreSQL)**
 
 -- Create database
 CREATE DATABASE BugTrackerDB;
@@ -73,7 +73,7 @@ CREATE DATABASE BugTrackerDB;
 -- Run schema.sql to create tables
 \i path/to/schema.sql
 
-🧪 Testing
+**🧪 Testing**
 
 Backend: Use tools like Postman to test API endpoints.
 
@@ -81,7 +81,7 @@ Frontend: Angular unit tests
 
 ng test
 
-🔧 Configuration
+**🔧 Configuration**
 
 Backend: Update appsettings.json with your PostgreSQL connection string.
 
@@ -93,7 +93,7 @@ Frontend: Update environment files with API URL (http://localhost:5000).
 MIT License
 
 
-🤝 Contributing
+**🤝 Contributing**
 
 1. Fork the repository
 
@@ -107,10 +107,11 @@ MIT License
 4. Submit a pull request
 
 
-🆘 Support
+**🆘 Support**
 
 📧 Email: support@bugtracker.com
 
 💬 Discord / Slack: [BugTracker Community]
+
 
 
