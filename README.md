@@ -1,59 +1,116 @@
-# BugTrackerUi
+# BugTracker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.18.
+BugTracker is a web-based application designed to help software development teams efficiently report, track, and manage bugs throughout the software lifecycle. It allows users to log new bugs, assign them to team members, update their status, and monitor progress in real time.
 
-## Development server
+📁 Project Structure
 
-To start a local development server, run:
+BugTracker/
+├── Backend/
+│   ├── BugTrackerAPI/           # .NET API project
+│   │   ├── Controllers/
+│   │   ├── Models/
+│   │   ├── Services/
+│   │   └── Program.cs
+├── Frontend/
+│   ├── bugtracker-angular/      # Angular frontend
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   ├── assets/
+│   │   │   └── environments/
+│   │   └── angular.json
+├── Database/
+│   ├── schema.sql               # PostgreSQL schema
+├── README.md
+└── .gitignore
 
-```bash
-ng serve
-```
+🏗️ Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+User Management: Create, update, and manage user accounts.
 
-## Code scaffolding
+Bug Reporting: Log new bugs with title, description, priority, and status.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Bug Tracking: Update bug status, assign to team members, and track progress.
 
-```bash
-ng generate component component-name
-```
+Search & Filter: Find bugs by status, priority, or assigned user.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Notifications: Email or in-app alerts for bug updates (optional).
 
-```bash
-ng generate --help
-```
+Role-Based Access: Admins, developers, and testers with different permissions.
 
-## Building
+🚀 Quick Start
 
-To build the project run:
+Backend (.NET)
 
-```bash
-ng build
-```
+# Navigate to backend folder
+cd Backend/BugTrackerAPI
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+# Restore dependencies
+dotnet restore
 
-## Running unit tests
+# Run the API
+dotnet run
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+# API will be available at http://localhost:5000
 
-```bash
+Frontend (Angular)
+
+# Navigate to frontend folder
+cd Frontend/bugtracker-angular
+
+# Install dependencies
+npm install
+
+# Run Angular app
+ng serve --open
+
+# Frontend will be available at http://localhost:4200
+
+Database (PostgreSQL)
+
+-- Create database
+CREATE DATABASE BugTrackerDB;
+
+-- Run schema.sql to create tables
+\i path/to/schema.sql
+
+🧪 Testing
+
+Backend: Use tools like Postman to test API endpoints.
+
+Frontend: Angular unit tests
+
 ng test
-```
 
-## Running end-to-end tests
+🔧 Configuration
 
-For end-to-end (e2e) testing, run:
+Backend: Update appsettings.json with your PostgreSQL connection string.
 
-```bash
-ng e2e
-```
+Frontend: Update environment files with API URL (http://localhost:5000).
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+📄 License
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+MIT License
+
+
+🤝 Contributing
+
+1. Fork the repository
+
+
+2. Create a feature branch
+
+
+3. Write and test your code
+
+
+4. Submit a pull request
+
+
+🆘 Support
+
+📧 Email: support@bugtracker.com
+
+💬 Discord / Slack: [BugTracker Community]
+
+
